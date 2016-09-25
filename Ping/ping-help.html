@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<HEAD>
+ <meta charset="UTF-8">
+ <TITLE>Aide sur Ping</TITLE>
+</HEAD>
+<BODY CLASS="fifi">
+<TABLE WIDTH="100%">
+ <TR><TD WIDTH="1%" class="fifi-upbar">
+  <DIV>
+
+
+  <P CLASS="fifi-linkbar">
+<BR><A HREF="http://www.fifi.org/">www.fifi.org</A><BR>
+  </P>
+<P CLASS="fifi-copyright">
+  Copyright (C) 2000-2012 <BR>Philippe Troin
+  <BR>&lt;<A HREF="mailto:&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#102;&#105;&#102;&#105;&#46;&#111;&#114;&#103;">&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#102;&#105;&#102;&#105;&#46;&#111;&#114;&#103;</A>&gt;.
+ </P>
+ <P CLASS="fifi-copyright">
+  <A HREF="http://validator.w3.org/check?ss=&amp;sp=&amp;uri=http%3A//www.fifi.org/services/ping%2Dhelp">Valider&nbsp;le&nbsp;HTML</A>
+  <BR>
+  <A HREF="http://jigsaw.w3.org/css-validator/validator?uri=http%3A//www.fifi.org/services/ping%2Dhelp&amp;warning=2">Valider&nbsp;le&nbsp;CSS</A>
+  </P>
+ </DIV>
+ </TD>
+ <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;
+ <TD CLASS="fifi-content">
+<P CLASS="fifi-titlehead">Aide sur Ping</P>
+<!-- bof -->
+<P>Le <A HREF="ping.html">Ping</A> permet de vérifier si un hôte est en ligne.
+Remplissez le formulaire comme suit:</P>
+<DL>
+<DT><A NAME="host"><B>Hôte</B>:</A></DT>
+<DD><P>Le nom de la machine à tester (<TT>www.fifi.org</TT> par exemple) ou
+une adresse IP telle que <TT>127.0.0.1</TT>.</P></DD>
+<DT><A NAME="pkt-count"><B>Nombre de paquets</B>:</A></DT>
+<DD><P>Le nombre de paquets à envoyer à l'hôte. Si plus d'un paquet est envoyé,
+vous pourrez obtenir des statistiques telles que les temps les plus courts
+et les plus longs qu'a pris l'hôte à répondre.</P></DD>
+<DT><A NAME="pkt-wait"><B>Délai entre les paquets</B>:</A></DT>
+<DD><P>Le temps en secondes après chaque réponse avant d'envoyer un autre 
+paquet.</P></DD>
+<DT><A NAME="fmt"><B>Formater le résultat</B>:</A></DT>
+<DD><P>Vous pouvez choisir de voir les résultats bruts, ou de les formater
+dans un tableau récapitulatif.</P></DT>
+</DL>
+<P>Si vous avez opté pour un résultat formaté, le tableau récapitulatif
+contient les colonnes suivantes:</P>
+<DL>
+<DT><A NAME="seq-num"><B>Numéro de séquence</B>:</A></DT>
+<DD><P>Chaque paquet envoyé contient un <EM>numéro de séquence</EM>, et 
+le tableau liste les paquets dans l'ordre où ils sont reçus. Si un hôte est
+très loin (en termes de distance dans le réseau Internet), ou si un routeur
+entre Fifi.Org et l'hôte est surchargé, les réponses peuvent revenir dans
+un ordre différent (ce qui n'est généralement pas un bon signe).</P></DD>
+<DT><A NAME="ans-from"><B>Réponse venant de</B>:</A></DT>
+<DD><P>L'adresse IP de la machine qui a répondu au ping. Elle peut être
+différente de l'adresse de l'hôte pingé si la machine est derrière un 
+pare-feu (firewall).</P></DD>
+<DT><A NAME="ttl"><B>Durée de vie</B>:</A></DT>
+<DD><P>Le nombre de passerelles ou de routeurs que le paquet est autorisé
+à traverser avant d'être détruit (ceci afin d'éviter les boucles infinies).
+Dans le cas général, quand un hôte répond à un ping, il utilise en temps de
+vie de 255 pour la réponse (64 est aussi couramment utilisé).</P><P>Le nombre
+de routeurs traversés par la réponse peut donc être obtenu en soustrayant 
+le temps de vie à l'arrivée de 255 (ou 64). Si le temps de vie est moins que
+64, vous pouvez utiliser 64 comme base car les paquets traversant quelques
+200 routeurs avant d'arriver ici sont plutôt rares.</P><P>Vous pouvez
+utiliser <A HREF="https://jdolivet.github.io/Trace/">traceroute</A> pour obtenir la liste de
+ces routeurs.</P>
+<DT><A NAME="delay"><B>Délai</B>:</A></DT>
+<DD><P>Le temps pris pour faire l'aller-retour de Fifi.Org à l'hôte, en
+millisecondes.</P></DD>
+<DT><A NAME="stats"><B>Statistiques (paquets envoyés, reçus, pertes; délais
+minimum, moyen et maximum)</B>:</A></DT>
+<DD><P>Sans commentaires, devrait être explicite.</P></DD>
+</DL>
+<!-- eof -->
+</TABLE>
+</BODY>
+
+<!-- Mirrored from www.fifi.org/services/ping-help by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Feb 2016 09:59:22 GMT -->
+</HTML>

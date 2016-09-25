@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<HEAD>
+ <meta charset="UTF-8">
+ <TITLE>Traceroute</TITLE>
+</HEAD>
+<BODY CLASS="fifi">
+<TABLE WIDTH="100%">
+ 
+ <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;
+ <TD CLASS="fifi-content">
+
+<P STYLE="text-align:center">Clickez sur n'importe quel champ pour recevoir de
+l'<A HREF="traceroute-help.html" TARGET="_BLANK">aide</A>.
+</P>
+<form method="get" action="http://www.fifi.org/services/traceroute" enctype="application/x-www-form-urlencoded" TARGET=_BLANK>
+
+<DIV STYLE="text-align:center">
+<TABLE ALIGN=center>
+  <TR>
+    <TD>
+      <A HREF="traceroute-help.html#host" TARGET="_BLANK">Hôte</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="text" name="hostname"  size="20" maxlength="60" />
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror"></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <A HREF="traceroute-help.html#nprobes" TARGET="_BLANK">Nombre de traces</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="radio" name="nprobes" value="1" checked />1 <input type="radio" name="nprobes" value="2" />2 <input type="radio" name="nprobes" value="3" />3 <input type="radio" name="nprobes" value="4" />4 <input type="radio" name="nprobes" value="5" />5
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror"></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <A HREF="traceroute-help.html#resolved" TARGET="_BLANK">Résoudre les adresses</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="radio" name="resolved" value="yes" checked />oui <input type="radio" name="resolved" value="no" />non
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror"></P>
+    </TD>
+  </TR>
+</TABLE>
+<BR>
+<input type="submit" name="submit" value="Traceroute" />
+
+<P CLASS="fifi-error"></P>
+</DIV>
+</FORM>
+<!-- eof -->
+</TABLE>
+</BODY>
+
+<!-- Mirrored from www.fifi.org/services/traceroute by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Feb 2016 09:59:22 GMT -->
+</HTML>

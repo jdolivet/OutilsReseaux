@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<HEAD>
+ <meta charset="UTF-8">
+ <TITLE>Ping</TITLE>
+</HEAD>
+<BODY CLASS="fifi">
+<TABLE WIDTH="100%">
+
+ <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;
+ <TD CLASS="fifi-content">
+
+<P STYLE="text-align:center">Clickez sur n'importe quel champ pour recevoir de
+l'<A HREF="ping-help.html" TARGET="_BLANK">aide</A>.
+</P>
+<form method="get" action="http://www.fifi.org/services/ping" enctype="application/x-www-form-urlencoded" TARGET=_BLANK>
+
+<DIV STYLE="text-align:center">
+<TABLE ALIGN=center>
+  <TR>
+    <TD>
+      <A HREF="ping-help.html#host" TARGET="_BLANK">Hôte</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="text" name="hostname"  size="20" maxlength="60" />
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror"></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <A HREF="ping-help.html#pkt-count" TARGET="_BLANK">Nombre de paquets</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="radio" name="packetcount" value="1" checked />1 <input type="radio" name="packetcount" value="3" />3 <input type="radio" name="packetcount" value="5" />5 <input type="radio" name="packetcount" value="10" />10
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror"></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <A HREF="ping-help.html#pkt-wait" TARGET="_BLANK">Délai entre les paquets (s)</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="radio" name="packetwait" value="1" checked />1 <input type="radio" name="packetwait" value="2" />2 <input type="radio" name="packetwait" value="3" />3 <input type="radio" name="packetwait" value="4" />4 <input type="radio" name="packetwait" value="5" />5
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror"></P>
+    </TD>
+  <TR>
+    <TD>
+      <A HREF="ping-help.html#fmt" TARGET="_BLANK">Formatter le résultat</A>:
+    </TD>
+    <TD ALIGN="right">
+      <input type="radio" name="formatted" value="yes" checked />oui <input type="radio" name="formatted" value="no" />non
+    </TD>
+    <TD>
+      <P CLASS="fifi-formerror" ></P>
+    </TD>
+  </TR>
+</TABLE>
+<BR>
+<input type="submit" name="submit" value="Ping" />
+
+<P CLASS="fifi-error"></P>
+</DIV>
+</FORM>
+<!-- eof -->
+</TABLE>
+</BODY>
+
+<!-- Mirrored from www.fifi.org/services/ping by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Feb 2016 09:59:22 GMT -->
+</HTML>
